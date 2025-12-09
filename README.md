@@ -102,6 +102,8 @@ This MP4 has **no audio** — it is basically a “video transcript” that you 
 
 1. **Clone this repository**
 
-   ```bash
-   git clone "the repo url"
-   cd downloads
+cd ~/somewhere
+git clone https://github.com/nickTheScalper666/audiotee-whisper-overlay.git
+cd audiotee-whisper-overlay
+
+   

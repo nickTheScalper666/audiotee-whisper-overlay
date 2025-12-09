@@ -60,7 +60,7 @@ This MP4 has **no audio** — it is basically a “video transcript” that you 
 - **Language control**
   - Source language dropdown:
     - `Auto-detect`
-    - Hindi, Japanese, Korean, Chinese, Hebrew, Telugu, Kannada, English…
+    - Japanese, Korean, Chinese, Spanish, English…
   - Output mode dropdown:
     - `English (translated)` – whisper.cpp runs with `-tr`  
     - `Original language` – whisper.cpp outputs text in the spoken language

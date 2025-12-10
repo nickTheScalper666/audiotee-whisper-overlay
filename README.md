@@ -106,4 +106,26 @@ cd ~/somewhere
 git clone https://github.com/nickTheScalper666/audiotee-whisper-overlay.git
 cd audiotee-whisper-overlay
 
-   
+  
+2. Install required tools (Homebrew)  
+```bash
+brew install cmake pkg-config ffmpeg
+
+3. Get whisper.cpp
+Choose a folder (Desktop used as example):
+cd ~/Desktop  # or anywhere you prefer
+git clone https://github.com/ggerganov/whisper.cpp.git
+cd whisper.cpp
+
+4.cmake -B build -DGGML_METAL=ON
+cmake --build build -j
+
+5. Download a Whisper model (large models recommended)
+Stay inside the whisper.cpp folder:
+cd ~/Desktop/whisper.cpp
+Option A — Non-quantized GGML model
+bash ./models/download-ggml-model.sh large-v2
+Result:
+models/ggml-large-v2.bin
+Option B — Quantized GGUF model (recommended for Apple Silicon)
+bash ./models/download-gguf-model.sh large-v2-q5_0
